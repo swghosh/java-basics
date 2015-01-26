@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=int[]\ digits(int)
+comment1.params=n
+comment1.target=int\ countDigits(int)
+comment2.params=n
+comment2.target=java.lang.String\ toWord(int)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+comment4.params=
+comment4.target=void\ liberal()
+numComments=5

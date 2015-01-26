@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=Arrayer(int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Arrayer\r\n\ @param\ n\ \ size\ of\ array\ ar[]\r\n
+comment1.params=
+comment1.target=void\ insertElements()
+comment1.text=\r\n\ Insert\ elements\ into\ array\ ar[]\r\n
+comment2.params=pos
+comment2.target=void\ deleteElement(int)
+comment2.text=\r\n\ Delete\ element\ from\ array\ ar[pos]\r\n\ @param\ pos\ \ \ position\ of\ array\ element\ to\ delete\r\n
+comment3.params=
+comment3.target=void\ printElements()
+comment3.text=\r\n\ Print\ elements\ from\ array\ ar[]\r\n
+numComments=4
