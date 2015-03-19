@@ -25,7 +25,7 @@ public class Arrayer
             ar[i]=new Scanner(System.in).nextInt();
         }
     }
-    
+
     /**
      * Delete element from array ar[pos]
      * @param pos   position of array element to delete
@@ -33,13 +33,13 @@ public class Arrayer
     public void deleteElement(int pos)
     {
         if(pos<0||pos>=size-delete)
-        return;
+            return;
         delete++;
         for(int i=pos;i<size-1;i++)
-        ar[i]=ar[i+1];
+            ar[i]=ar[i+1];
         ar[size-delete]=0;
     }
-    
+
     /**
      * Print elements from array ar[]
      */
@@ -49,9 +49,9 @@ public class Arrayer
         for(int i=0;i<size-delete;i++)
         {
             if(i==(size-delete-1))
-            System.out.print(ar[i]);
+                System.out.print(ar[i]);
             else
-            System.out.print(ar[i]+",");
+                System.out.print(ar[i]+",");
         }
         System.out.print("}");
     }
