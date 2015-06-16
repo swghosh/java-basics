@@ -16,6 +16,31 @@ public class MagicSquareMatrix
                 dda[i][j]=sc.nextInt();
             }
         }
-        
+        boolean flag=true;
+        int sum1=0;
+        for(int i=0;i<n;i++)
+        {
+            sum1=sum1+dda[0][i];
+        }
+        for(int i=0;i<n && flag;i++)
+        {
+            int sum2=0;
+            for(int j=0;j<n;j++)
+            {
+                sum2=sum2+dda[i][j];
+            }
+            if(sum2!=sum1)
+            {
+                flag=false;
+                break;
+            }
+        }
+        int s=0;
+        for(int i=0;i<n;i++)
+        {
+            s=s+dda[i][i];
+        }
+        if(s!=sum1) flag=false;
+        System.out.print(((flag)?"Magic Square Matrix.":"Not Magic Square Matrix."));
     }
 }
