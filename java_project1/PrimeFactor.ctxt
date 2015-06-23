@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.params=n
-comment0.target=java.lang.String\ primeFactor(int)
-comment1.params=n
-comment1.target=boolean\ isPrime(int)
-comment2.params=
-comment2.target=void\ main()
-numComments=3
