@@ -21,7 +21,8 @@ int main()
 		system("netsh wlan stop hostednetwork");
 		break;
 		case '3':
-		
+		cout<<"This feature will be added soon when updates roll out."<<endl;
+		break;
 		default:
 		cout<<endl<<"Something went wrong!"<<endl;
 	}

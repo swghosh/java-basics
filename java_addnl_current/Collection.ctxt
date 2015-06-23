@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Collection()
+comment1.params=l
+comment1.target=Collection(int)
+comment2.params=
+comment2.target=void\ inputArr()
+comment3.params=c
+comment3.target=Collection\ common(Collection)
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

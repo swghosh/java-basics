@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=mm\ nn
+comment0.target=Matrix(int,\ int)
+comment1.params=
+comment1.target=void\ fillarray()
+comment2.params=A
+comment2.target=Matrix\ subMat(Matrix)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4
