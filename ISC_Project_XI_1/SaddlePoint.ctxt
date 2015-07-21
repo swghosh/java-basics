@@ -1,10 +1,14 @@
 #BlueJ class context
 comment0.params=ar
 comment0.target=int\ indexOfMin(int[])
+comment0.text=\r\n\ Method\ indexOfMin\r\n\r\n\ @param\ ar\ Array\r\n\ @return\ Index\ of\ mininimum\ element\r\n
 comment1.params=ar
 comment1.target=int\ indexOfMax(int[])
+comment1.text=\r\n\ Method\ indexOfMax\r\n\r\n\ @param\ ar\ Array\r\n\ @return\ Index\ of\ maximum\ element\r\n
 comment2.params=dda
 comment2.target=int[]\ indexOfSaddlePoint(int[][])
+comment2.text=\r\n\ Method\ indexOfSaddlePoint\r\n\ \r\n\ @param\ dda\ Double\ Dimensional\ Array\r\n\ @return\ Index\ of\ saddle\ point\r\n
 comment3.params=args
 comment3.target=void\ main(java.lang.String[])
+comment3.text=\r\n\ Method\ main\r\n\ method\ is\ executed\ at\ runtime\r\n\ @param\ args\ Arguments\r\n
 numComments=4

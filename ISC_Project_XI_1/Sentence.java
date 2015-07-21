@@ -1,14 +1,19 @@
 import java.util.*;
 public class Sentence
 {
+    /**
+     * Method main
+     * method is executed at runtime
+     * @param args Arguments
+     */
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
         System.out.println("SENTENCE");
         System.out.print("Sentence [string] ->");
-        String str=sc.nextLine();
+        String str=sc.nextLine();//user input string
         char punc=' ';
-        if(str.indexOf('.')>0)
+        if(str.indexOf('.')>0)//checks whether string ends in punctuation mark or not
         {
             str=str.substring(0,str.indexOf('.'));
             punc='.';
@@ -26,9 +31,9 @@ public class Sentence
         sc.close();
         sc=new Scanner(System.in);
         System.out.print("Word to delete [string] ->");
-        String word=sc.next();
+        String word=sc.next();//user input word to delete from string
         sc.close();
-        sc=new Scanner(str);
+        sc=new Scanner(str);//scanner object on input string to pass words as tokens
         String output="";
         sc.useDelimiter(" ");int ctr=0;int k=0;
         while(sc.hasNext())
@@ -43,7 +48,7 @@ public class Sentence
         }
         output=output.trim();
         System.out.println(output+((punc==' ')?"":punc));
-        System.out.println("Position of word deleted= "+k);
+        System.out.println("Position of word deleted= "+k);//prints position of word deleted
     }
     
 }

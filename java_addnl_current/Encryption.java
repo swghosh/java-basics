@@ -5,7 +5,7 @@ public class Encryption
         if(!(shift>=1 && shift<=26)) shift=0;   
         str=str.toUpperCase().trim();
         String code="";
-        str=str.replace(" ","QQ");
+        str=str.replaceAll(" ","QQ");
         char alpha[]=new char[27];
         char beta[]=new char[27];
         int k=shift;
@@ -41,7 +41,7 @@ public class Encryption
     public static String decrypt(String code,int shift)
     {
         String ptext="";
-        code=code.toUpperCase().trim().replace(" ","");
+        code=code.toUpperCase().trim().replaceAll(" ","");
         for(int i=0;i<code.length();i++)
         {
             char ch=code.charAt(i);
@@ -49,7 +49,7 @@ public class Encryption
             n=n-64;
             ptext=ptext+decrypt(ch,shift);
         }
-        ptext=ptext.replace("QQ"," ").trim();
+        ptext=ptext.replaceAll("QQ"," ").trim();
         return ptext;
     }
 

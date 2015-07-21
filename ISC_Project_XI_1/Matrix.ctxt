@@ -1,10 +1,14 @@
 #BlueJ class context
 comment0.params=mm\ nn
 comment0.target=Matrix(int,\ int)
+comment0.text=\r\n\ Matrix\ Constructor\r\n\r\n\ @param\ mm\ No\ of\ rows\r\n\ @param\ nn\ No\ of\ columns\r\n
 comment1.params=
 comment1.target=void\ fillarray()
+comment1.text=\r\n\ Method\ fillarray\r\n\ input\ array\ elements\r\n
 comment2.params=A
 comment2.target=Matrix\ subMat(Matrix)
+comment2.text=\r\n\ Method\ subMat\r\n\r\n\ @param\ A\ Matrix\r\n\ @return\ Subtracted\ matrix\r\n
 comment3.params=args
 comment3.target=void\ main(java.lang.String[])
+comment3.text=\r\n\ Method\ main\r\n\ method\ is\ executed\ at\ runtime\r\n\ @param\ args\ Arguments\r\n
 numComments=4

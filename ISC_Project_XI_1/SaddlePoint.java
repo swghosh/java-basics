@@ -1,6 +1,12 @@
 import java.util.*;
 public class SaddlePoint
 {
+    /**
+     * Method indexOfMin
+     *
+     * @param ar Array
+     * @return Index of mininimum element
+     */
     public static int indexOfMin(int[] ar)
     {
         int min=ar[0];int k=0;
@@ -11,6 +17,12 @@ public class SaddlePoint
         return k;
     }
 
+    /**
+     * Method indexOfMax
+     *
+     * @param ar Array
+     * @return Index of maximum element
+     */
     public static int indexOfMax(int[] ar)
     {
         int max=0;int k=0;
@@ -21,6 +33,12 @@ public class SaddlePoint
         return k;
     }
 
+    /**
+     * Method indexOfSaddlePoint
+     * 
+     * @param dda Double Dimensional Array
+     * @return Index of saddle point
+     */
     public static int[] indexOfSaddlePoint(int dda[][])
     {
         int ref[]=null;
@@ -42,6 +60,11 @@ public class SaddlePoint
         return ref;
     }
 
+    /**
+     * Method main
+     * method is executed at runtime
+     * @param args Arguments
+     */
     public static void main(String[] args)
     {
         System.out.println("SADDLE POINT");
@@ -49,7 +72,7 @@ public class SaddlePoint
         System.out.print("Order of Square Matrix [int]->");
         int n=sc.nextInt();
         int[][] dda=new int[n][n];
-        for(int i=0;i<n;i++)
+        for(int i=0;i<n;i++)//user input array elements
         {
             for(int j=0;j<n;j++)
             {
@@ -58,7 +81,7 @@ public class SaddlePoint
             }
         }
         int ref[]=indexOfSaddlePoint(dda);
-        if(ref!=null)
+        if(ref!=null)//shows saddle point of matrix
         {
             System.out.println("Saddle Point is Element at ["+(ref[0]+1)+"x"+(ref[1]+1)+"] = "+dda[ref[0]][ref[1]]);
         }

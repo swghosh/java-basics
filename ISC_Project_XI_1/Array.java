@@ -4,12 +4,20 @@ public class Array
     int ar[];
     int n;
     int num;
+    /**
+     * Array Constructor
+     *
+     */
     Array()
     {
         ar=new int[100];
         n=0;
     }
 
+    /**
+     * Method getArray
+     * takes array from user
+     */
     void getArray()
     {
         Scanner sc=new Scanner(System.in);
@@ -22,6 +30,13 @@ public class Array
         }
     }
 
+    /**
+     * Method process
+     *
+     * @param B A parameter
+     * @param k A parameter
+     * @return The return value
+     */
     int process(Array B,int k)
     {
         num=k;int ctr=0;
@@ -32,6 +47,12 @@ public class Array
         return ctr;
     }
 
+    /**
+     * Method merge
+     * merges 2 array objects
+     * @param a Array object
+     * @return Merged Array
+     */
     Array merge(Array a)
     {
         Array b=new Array();
@@ -44,9 +65,13 @@ public class Array
         {
             b.ar[k++]=a.ar[i];
         }
-        return b;
+        return b;//merged array
     }
 
+    /**
+     * Method display
+     * displays array elements
+     */
     void display()
     {
         for(int i=0;i<n;i++)
@@ -60,6 +85,11 @@ public class Array
         }
     }
 
+    /**
+     * Method main
+     * method executed at runtime
+     * @param args Arguments
+     */
     public static void main(String args[])
     {
         Array a=new Array();
@@ -72,8 +102,8 @@ public class Array
         System.out.println("---------\nARRAY 2");
         b.getArray();
         Array c=new Array();
-        c=a.merge(b);
+        c=a.merge(b);//merges 2 user input array
         System.out.println("---------\nMERGED ARRAY");
-        c.display();
+        c.display();//prints merged array
     }
 }

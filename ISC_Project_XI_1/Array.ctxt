@@ -1,14 +1,20 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Array()
+comment0.text=\r\n\ Array\ Constructor\r\n\r\n
 comment1.params=
 comment1.target=void\ getArray()
+comment1.text=\r\n\ Method\ getArray\r\n\ takes\ array\ from\ user\r\n
 comment2.params=B\ k
 comment2.target=int\ process(Array,\ int)
+comment2.text=\r\n\ Method\ process\r\n\r\n\ @param\ B\ A\ parameter\r\n\ @param\ k\ A\ parameter\r\n\ @return\ The\ return\ value\r\n
 comment3.params=a
 comment3.target=Array\ merge(Array)
+comment3.text=\r\n\ Method\ merge\r\n\ merges\ 2\ array\ objects\r\n\ @param\ a\ Array\ object\r\n\ @return\ Merged\ Array\r\n
 comment4.params=
 comment4.target=void\ display()
+comment4.text=\r\n\ Method\ display\r\n\ displays\ array\ elements\r\n
 comment5.params=args
 comment5.target=void\ main(java.lang.String[])
+comment5.text=\r\n\ Method\ main\r\n\ method\ executed\ at\ runtime\r\n\ @param\ args\ Arguments\r\n
 numComments=6

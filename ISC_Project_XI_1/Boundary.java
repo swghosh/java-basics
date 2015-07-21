@@ -1,16 +1,21 @@
 import java.util.*;
 public class Boundary
 {
+    /**
+     * Method main
+     * method is executed at runtime
+     * @param args Arguments
+     */
     public static void main(String[] args)
     {
         System.out.println("BOUNDARY");
         Scanner sc=new Scanner(System.in);
         System.out.print("No. of Rows [int]->");
-        int m=sc.nextInt();
+        int m=sc.nextInt();//user inputs no of rows
         System.out.print("No. of Columns [int]->");
-        int n=sc.nextInt();
+        int n=sc.nextInt();//user inputs no of columns
         int[][] dda=new int[m][n];
-        for(int i=0;i<m;i++)
+        for(int i=0;i<m;i++)//user inputs array elements
         {
             for(int j=0;j<n;j++)
             {
@@ -18,7 +23,7 @@ public class Boundary
                 dda[i][j]=sc.nextInt();
             }
         }
-        for(int i=0;i<m;i++)
+        for(int i=0;i<m;i++)//prints only boundary of array
         {
             System.out.print("\n|");
             for(int j=0;j<n;j++)

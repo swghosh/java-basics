@@ -1,12 +1,17 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Transarray()
+comment0.text=\r\n\ Transarray\ Constructor\r\n\r\n
 comment1.params=mm\ nn
 comment1.target=Transarray(int,\ int)
+comment1.text=\r\n\ Transarray\ Constructor\r\n\r\n\ @param\ mm\ No\ of\ rows\r\n\ @param\ nn\ No\ of\ colums\r\n
 comment2.params=
 comment2.target=void\ fillarray()
+comment2.text=\r\n\ Method\ fillarray\r\n\ user\ input\ array\r\n
 comment3.params=A
 comment3.target=void\ transpose(Transarray)
+comment3.text=\r\n\ Method\ transpose\r\n\r\n\ @param\ A\ Transarray\ object\r\n
 comment4.params=
 comment4.target=void\ disparray()
+comment4.text=\r\n\ Method\ disparray\r\n\ displays\ array\r\n
 numComments=5

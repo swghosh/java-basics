@@ -1,14 +1,20 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Collection()
+comment0.text=\r\n\ Collection\ Constructor\r\n\r\n
 comment1.params=l
 comment1.target=Collection(int)
+comment1.text=\r\n\ Collection\ Constructor\r\n\r\n\ @param\ l\ Length\ of\ array\r\n
 comment2.params=
 comment2.target=void\ input()
+comment2.text=\r\n\ Method\ input\r\n\ user\ input\ of\ array\r\n
 comment3.params=c
 comment3.target=Collection\ common(Collection)
+comment3.text=\r\n\ Method\ common\r\n\r\n\ @param\ c\ Collection\ object\r\n\ @return\ Common\ Collection\r\n
 comment4.params=
 comment4.target=void\ display()
+comment4.text=\r\n\ Method\ display\r\n\ displays\ array\r\n
 comment5.params=args
 comment5.target=void\ main(java.lang.String[])
+comment5.text=\r\n\ Method\ main\r\n\ method\ executed\ at\ runtime\r\n\ @param\ args\ A\ parameter\r\n
 numComments=6

@@ -2,16 +2,30 @@ import java.util.*;
 public class Transarray
 {
     int arr[][];int M,N;
+    /**
+     * Transarray Constructor
+     *
+     */
     Transarray()
     {
         M=1;N=1;arr=new int[M][N];
     }
 
+    /**
+     * Transarray Constructor
+     *
+     * @param mm No of rows
+     * @param nn No of colums
+     */
     Transarray(int mm,int nn)
     {
         M=mm;N=nn;arr=new int[M][N];
     }
 
+    /**
+     * Method fillarray
+     * user input array
+     */
     void fillarray()
     {
         Scanner sc=new Scanner(System.in);
@@ -25,6 +39,11 @@ public class Transarray
         }
     }
 
+    /**
+     * Method transpose
+     *
+     * @param A Transarray object
+     */
     void transpose(Transarray A)
     {
         Transarray B=new Transarray(A.N,A.M);
@@ -37,9 +56,13 @@ public class Transarray
         }
         this.arr=B.arr;
         this.M=B.M;
-        this.N=B.N;
+        this.N=B.N;//transpose of array obtained
     }
 
+    /**
+     * Method disparray
+     * displays array
+     */
     void disparray()
     {
         for(int i=0;i<this.M;i++)
@@ -50,6 +73,6 @@ public class Transarray
                 System.out.print(this.arr[i][j]+"|");
             }
             System.out.println();
-        }
+        }//prints array
     }
 }

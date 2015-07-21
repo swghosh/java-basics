@@ -1,19 +1,24 @@
 import java.util.*;
 public class SquareMatrix
 {    
+    /**
+     * Method main
+     * method is executed at runtime
+     * @param args Arguments
+     */
     public static void main(String args[])
     {
         System.out.println("SQUARE MATRIX");
         Scanner sc=new Scanner(System.in);
         System.out.print("Order of Square Matrix [int]->");
-        int M=sc.nextInt();
+        int M=sc.nextInt();//user input matrix length
         if(M<2||M>10)
         {
             System.out.println("MATRIX SIZE OUT OF RANGE");
             return;
         }
         int[][] dda=new int[M][M];
-        for(int i=0;i<M;i++)
+        for(int i=0;i<M;i++)//user input matrix elements
         {
             for(int j=0;j<M;j++)
             {
@@ -31,7 +36,7 @@ public class SquareMatrix
                     flag=false;break;
                 }
             }
-        }
+        }//checks whether symmetric or not
         System.out.print("\nORIGINAL MATRIX");
         for(int i=0;i<M;i++)
         {
@@ -46,7 +51,7 @@ public class SquareMatrix
         System.out.println();
 		int sum1=0,sum2=0;
 		System.out.println("\nLEFT DIAGONAL");
-		for(int i=0;i<M;i++)
+		for(int i=0;i<M;i++)//prints left diagonal
 		{
 			for(int j=0;j<=i;j++)
 				System.out.print("\t");
@@ -55,13 +60,13 @@ public class SquareMatrix
 		}
 		System.out.println("\tSum="+sum1);
 		System.out.println("\nRIGHT DIAGONAL");
-		for(int i=M-1;i>=0;i--)
+		for(int i=M-1;i>=0;i--)//prints right diagonal
 		{
 			for(int j=i;j>=0;j--)
 				System.out.print("\t");
 			System.out.print(dda[(M-1-i)][i]+"\n");
 			sum2=sum2+dda[(M-i-1)][i];
 		}
-		System.out.println("\tSum="+sum2);
+		System.out.println("\tSum="+sum2);//prints sum of diagonals
     }
 }

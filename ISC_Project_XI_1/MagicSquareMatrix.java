@@ -1,6 +1,11 @@
 import java.util.*;
 public class MagicSquareMatrix
 {
+    /**
+     * Method main
+     * method is executed at runtime
+     * @param args Arguments
+     */
     public static void main(String[] args)
     {
         System.out.println("MAGIC SQUARE MATRIX");
@@ -8,7 +13,7 @@ public class MagicSquareMatrix
         System.out.print("Order of Square Matrix [int]->");
         int n=sc.nextInt();
         int[][] dda=new int[n][n];
-        for(int i=0;i<n;i++)
+        for(int i=0;i<n;i++)//user inputs matrix elements
         {
             for(int j=0;j<n;j++)
             {
@@ -16,13 +21,13 @@ public class MagicSquareMatrix
                 dda[i][j]=sc.nextInt();
             }
         }
-        boolean flag=true;
+        boolean flag=true;//stores whether matrix is magic square or not
         int sum1=0;
         for(int i=0;i<n;i++)
         {
             sum1=sum1+dda[0][i];
         }
-        for(int i=0;i<n && flag;i++)
+        for(int i=0;i<n && flag;i++)//performs magic square test
         {
             int sum2=0;
             for(int j=0;j<n;j++)
@@ -36,11 +41,11 @@ public class MagicSquareMatrix
             }
         }
         int s=0;
-        for(int i=0;i<n;i++)
+        for(int i=0;i<n;i++)//prints left diagonal
         {
             s=s+dda[i][i];
         }
         if(s!=sum1) flag=false;
-        System.out.print(((flag)?"Magic Square Matrix.":"Not Magic Square Matrix."));
+        System.out.print(((flag)?"Magic Square Matrix.":"Not Magic Square Matrix."));//prints whether magic square matrix or not
     }
 }
