@@ -1,0 +1,4 @@
+#BlueJ class context
+comment0.params=request\ response
+comment0.target=void\ doGet(javax.servlet.http.HttpServletRequest,\ javax.servlet.http.HttpServletResponse)
+numComments=1
