@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.params=
-comment0.target=void\ init()
-comment1.params=request\ response
-comment1.target=void\ doGet(javax.servlet.http.HttpServletRequest,\ javax.servlet.http.HttpServletResponse)
-comment2.params=
-comment2.target=void\ destroy()
-numComments=3
