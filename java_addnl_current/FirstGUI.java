@@ -9,7 +9,7 @@ public class FirstGUI extends JFrame {
 		super("Code Crafts");
 		setBounds(100,100,300,200);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		Container con=this.getContentPane();
+		Container con=getContentPane();
 		con.add(pane);
 		//button.setMnemonic('D');
 		//pane.add(button);
