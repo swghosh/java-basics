@@ -1,21 +1,16 @@
-INDEX VERSION 1.127+F:\Docs\GitHub\bytec\eclipse_space\.metadata\.plugins\org.eclipse.jdt.core
-3005266855.index
-3055343851.index
-2445759930.index
-950895222.index
-3405204423.index
-1922429325.index
-4080185400.index
-2002016482.index
-669558727.index
-799002007.index
-2626159425.index
-2345765500.index
-288943980.index
-1422196817.index
-1854870262.index
-1709586772.index
-3827265548.index
-3881563151.index
-1353358359.index
-873530058.index
+INDEX VERSION 1.127+C:\Users\Code Crafts\Desktop\Repositories\bytec\eclipse_space\.metadata\.plugins\org.eclipse.jdt.core
+1299022128.index
+3133528496.index
+163172794.index
+1995173708.index
+3065916431.index
+305854171.index
+4155206848.index
+4041092966.index
+1697886153.index
+30765161.index
+4108727661.index
+1115467115.index
+1045965904.index
+1498219845.index
+3974580528.index
