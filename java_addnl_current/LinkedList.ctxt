@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=element
+comment0.target=void\ insertFront(int)
+comment1.params=position\ element
+comment1.target=void\ insertMiddle(int,\ int)
+comment2.params=element
+comment2.target=void\ insertRear(int)
+comment3.params=
+comment3.target=void\ display()
+numComments=4

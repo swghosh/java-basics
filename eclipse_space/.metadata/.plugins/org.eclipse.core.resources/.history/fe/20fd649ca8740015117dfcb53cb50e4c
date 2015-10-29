@@ -1,0 +1,52 @@
+import java.util.*;
+public class LinkedListTester {
+
+	public static void main(String[] args) {
+		LinkedList list=null;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("------||MENU||------");
+		System.out.println("1-Initialise Linked List");
+		System.out.println("2-Insert Integer Front");
+		System.out.println("3-Insert Integer Rear");
+		System.out.println("4-Insert Integer Middle");
+		System.out.println("5-Display Linked List");
+		System.out.println("0-Exit");
+		System.out.print("\nChoice ->");
+		int ch=sc.nextInt();
+		boolean exit=false;
+		while(exit!=true) {
+			switch(ch){
+			case 1:
+				list=new LinkedList();
+				break;
+			case 2:
+				System.out.print("\nElement ->");
+				int element=sc.nextInt();
+				list.insertFront(element);
+				break;
+			case 3:
+				System.out.print("\nElement ->");
+				int element=sc.nextInt();
+				list.insertRear(element);
+				break;
+			case 4:
+				System.out.print("\nElement ->");
+				int element=sc.nextInt();
+				System.out.print("\nPosition ->");
+				int position=sc.nextInt();
+				list.insertFront(position,element);
+				break;
+			case 5:
+				System.out.println();
+				list.display;
+				break;
+			case 0:
+				exit=true;
+				break;
+			default:
+				System.err.println("Wrong Choice!");
+			}
+		}
+	}
+
+}
