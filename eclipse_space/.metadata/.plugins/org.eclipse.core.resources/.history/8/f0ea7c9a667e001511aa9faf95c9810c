@@ -36,20 +36,6 @@ public class LinkedList {
 			return;
 		}
 	}
-	int deleteMiddle(int position) {
-		try {
-			int count=1;
-			Node ptr=start;
-			for(;count<position-1;count++) ptr=ptr.next;
-			int val=ptr.next.getInt();
-			ptr.next=ptr.next.next;
-			return val;
-		}
-		catch(NullPointerException ex) {
-			System.err.println("Error State! :(");
-			return -9999;
-		}
-	}
 	void insertRear(int element){
 		Node newnode=new Node(element);
 		if(start==null) start=newnode;

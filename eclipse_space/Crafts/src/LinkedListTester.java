@@ -8,10 +8,13 @@ public class LinkedListTester {
 		while(exit!=true) {
 			System.out.println("------||MENU||------");
 			System.out.println("1-Initialise Linked List");
-			System.out.println("2-Insert Integer Front");
-			System.out.println("3-Insert Integer Rear");
-			System.out.println("4-Insert Integer Middle");
-			System.out.println("5-Display Linked List");
+			System.out.println("2-Insert Link Front");
+			System.out.println("3-Insert Link Rear");
+			System.out.println("4-Insert Link Middle");
+			System.out.println("5-Delete Link Front");
+			System.out.println("6-Delete Link Rear");
+			System.out.println("7-Delete Link Middle");
+			System.out.println("8-Display Linked List");
 			System.out.println("0-Exit");
 			System.out.print("\nChoice ->");
 			int ch=sc.nextInt();
@@ -37,6 +40,17 @@ public class LinkedListTester {
 				list.insertMiddle(position1,element3);
 				break;
 			case 5:
+				list.deleteFront();
+				break;
+			case 6:
+				list.deleteRear();
+				break;
+			case 7:
+				System.out.print("\nPosition ->");
+				int position2=sc.nextInt();
+				list.deleteMiddle(position2);
+				break;
+			case 8:
 				System.out.println();
 				list.display();
 				System.out.println();

@@ -42,7 +42,7 @@ public class LinkedList {
 			Node ptr=start;
 			for(;count<position-1;count++) ptr=ptr.next;
 			int val=ptr.next.getInt();
-			ptr.next=ptr.next.next;
+			ptr=ptr.next;
 			return val;
 		}
 		catch(NullPointerException ex) {

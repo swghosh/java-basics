@@ -40,10 +40,9 @@ public class LinkedList {
 		try {
 			int count=1;
 			Node ptr=start;
-			for(;count<position-1;count++) ptr=ptr.next;
-			int val=ptr.next.getInt();
-			ptr.next=ptr.next.next;
-			return val;
+			for(;count<position;count++) ptr=ptr.next;
+			int val=ptr.getInt();
+			ptr=ptr.next;
 		}
 		catch(NullPointerException ex) {
 			System.err.println("Error State! :(");

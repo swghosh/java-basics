@@ -36,20 +36,6 @@ public class LinkedList {
 			return;
 		}
 	}
-	int deleteMiddle(int position) {
-		try {
-			int count=1;
-			Node ptr=start;
-			for(;count<position-1;count++) ptr=ptr.next;
-			int val=ptr.next.getInt();
-			ptr.next=ptr.next.next;
-			return val;
-		}
-		catch(NullPointerException ex) {
-			System.err.println("Error State! :(");
-			return -9999;
-		}
-	}
 	void insertRear(int element){
 		Node newnode=new Node(element);
 		if(start==null) start=newnode;
@@ -62,12 +48,12 @@ public class LinkedList {
 	int deleteRear() {
 		try {
 			Node ptr1=start,ptr2=start;
-			while(ptr1.next!=null) {
-				ptr2=ptr1;
+			while(ptr2.next!=null) {
 				ptr1=ptr1.next;
+				ptr2=ptr1.next;
 			}
-			int val=ptr2.getInt();
-			ptr2.next=null;
+			int val=ptr1.next.getInt();
+			ptr1.next=null;
 			return val;
 		}
 		catch(NullPointerException ex) {

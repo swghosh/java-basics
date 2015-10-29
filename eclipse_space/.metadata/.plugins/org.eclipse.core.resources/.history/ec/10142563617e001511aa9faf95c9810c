@@ -18,7 +18,7 @@ public class LinkedList {
 			return val;
 		}
 		catch(NullPointerException ex) {
-			System.err.println("Error State! :(");
+			System.err.println("Error State 78EF! :(");
 			return -9999;
 		}
 	}
@@ -32,22 +32,8 @@ public class LinkedList {
 			ptr.next=newnode;
 		}
 		catch(NullPointerException ex) {
-			System.err.println("Error State! :(");
+			System.err.println("Error State 78EF! :(");
 			return;
-		}
-	}
-	int deleteMiddle(int position) {
-		try {
-			int count=1;
-			Node ptr=start;
-			for(;count<position-1;count++) ptr=ptr.next;
-			int val=ptr.next.getInt();
-			ptr.next=ptr.next.next;
-			return val;
-		}
-		catch(NullPointerException ex) {
-			System.err.println("Error State! :(");
-			return -9999;
 		}
 	}
 	void insertRear(int element){
@@ -57,22 +43,6 @@ public class LinkedList {
 			Node ptr=start;
 			while(ptr.next!=null) ptr=ptr.next;
 			ptr.next=newnode;
-		}
-	}
-	int deleteRear() {
-		try {
-			Node ptr1=start,ptr2=start;
-			while(ptr1.next!=null) {
-				ptr2=ptr1;
-				ptr1=ptr1.next;
-			}
-			int val=ptr2.getInt();
-			ptr2.next=null;
-			return val;
-		}
-		catch(NullPointerException ex) {
-			System.err.println("Error State! :(");
-			return -9999;
 		}
 	}
 	void display() {

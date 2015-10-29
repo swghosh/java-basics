@@ -137,3 +137,6 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2015-10-29 22:47:14.080
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from model repositories. Are you offline?
