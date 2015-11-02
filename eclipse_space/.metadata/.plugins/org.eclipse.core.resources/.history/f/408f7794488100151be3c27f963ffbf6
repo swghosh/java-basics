@@ -1,0 +1,12 @@
+
+public class AdvancedLinkedList extends LinkedList {
+	
+	void mergeLinkedList(LinkedList a) {
+		Node ptr=a.start;
+		while (ptr!=null) {
+			this.insertRear(ptr.getInt());
+			ptr=ptr.next;
+		}
+	}
+	
+}

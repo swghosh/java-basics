@@ -1,8 +1,10 @@
-import java.util.*;
-public class LinkedListTester {
+import java.util.Scanner;
 
-	public static void main(String[] args) {
-		LinkedList list=null;
+
+public class AdvancedLinkedListTester {
+	
+	static AdvancedLinkedList userInput() {
+		AdvancedLinkedList list=null;
 		Scanner sc=new Scanner(System.in);
 		boolean exit=false;
 		while(exit!=true) {
@@ -15,12 +17,12 @@ public class LinkedListTester {
 			System.out.println("6-Delete Link Rear");
 			System.out.println("7-Delete Link Middle");
 			System.out.println("8-Display Linked List");
-			System.out.println("0-Exit");
+			System.out.println("0-Continue");
 			System.out.print("\nChoice ->");
 			int ch=sc.nextInt();
 			switch(ch) {
 			case 1:
-				list=new LinkedList();
+				list=new AdvancedLinkedList();
 				break;
 			case 2:
 				System.out.print("\nElement ->");
@@ -63,6 +65,37 @@ public class LinkedListTester {
 			}
 		}
 		sc.close();
+		return list;
 	}
-
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("---MENU---");
+		System.out.println("1-Merge LinkedLists");
+		System.out.println("2-Split LinkedList");
+		System.out.print("\nChoice->");int ch=sc.nextInt();
+		switch(ch) {
+		case 1:
+			System.out.println("1st Linked List");
+			AdvancedLinkedList l1=userInput();
+			System.out.println("2nd Linked List");
+			LinkedList l2=userInput();
+			l1.merge(l2);
+			l1.display();
+			break;
+		case 2:
+			AdvancedLinkedList l3=userInput();
+			System.out.print("\nPosition ->");
+			int pos=sc.nextInt();
+			LinkedList[] split=l3.split(pos);
+			split[0].display();
+			System.out.println();
+			split[1].display();
+			break;
+		default:
+			System.err.println("Wrong Choice!");
+		}
+		sc.close();
+	}
+	
 }

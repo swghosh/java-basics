@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=a
+comment0.target=void\ merge(LinkedList)
+comment1.params=position
+comment1.target=LinkedList[]\ split(int)
+numComments=2

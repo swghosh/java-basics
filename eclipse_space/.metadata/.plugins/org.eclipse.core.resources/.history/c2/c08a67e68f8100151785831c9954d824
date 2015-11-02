@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+
+public class LinkedListMergeSplit {
+
+	public static void main(String[] args) {
+		LinkedList list[]=new LinkedList[2];
+		Scanner sc=new Scanner(System.in);
+		boolean exit=false;
+		
+	}
+
+}

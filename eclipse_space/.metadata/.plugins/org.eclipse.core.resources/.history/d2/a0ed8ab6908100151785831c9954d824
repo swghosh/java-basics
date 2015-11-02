@@ -1,8 +1,10 @@
-import java.util.*;
-public class LinkedListTester {
+import java.util.Scanner;
 
-	public static void main(String[] args) {
-		LinkedList list=null;
+
+public class AdvancedLinkedListTester {
+	
+	static AdvancedLinkedList userInput() {
+		AdvancedLinkedList list=null;
 		Scanner sc=new Scanner(System.in);
 		boolean exit=false;
 		while(exit!=true) {
@@ -15,7 +17,7 @@ public class LinkedListTester {
 			System.out.println("6-Delete Link Rear");
 			System.out.println("7-Delete Link Middle");
 			System.out.println("8-Display Linked List");
-			System.out.println("0-Exit");
+			System.out.println("0-Continue");
 			System.out.print("\nChoice ->");
 			int ch=sc.nextInt();
 			switch(ch) {
@@ -62,7 +64,7 @@ public class LinkedListTester {
 				System.err.println("Wrong Choice!");
 			}
 		}
-		sc.close();
+		return list;
 	}
-
+	
 }
