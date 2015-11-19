@@ -9,6 +9,7 @@ public class TruthTable {
             System.out.println();
         }
     }
+
     public static void main(String[] args) {
         printTruthTable(3); //enter any natural int
     }
