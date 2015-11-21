@@ -8,8 +8,6 @@ import java.awt.event.ActionEvent;
 public class ApplicationStart {
 
 	private JFrame frame;
-	private JLabel quote;
-	private JButton button;
 	
 	ApplicationStart() {
 		initialize();
@@ -26,25 +24,22 @@ public class ApplicationStart {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		quote = new JLabel("\"Every fool can know. The point is to understand.\"");
-		quote.setHorizontalAlignment(SwingConstants.CENTER);
-		quote.setFont(new Font("Segoe UI Light", Font.PLAIN, 12));
-		quote.setBounds(25, 179, 349, 30);
-		frame.getContentPane().add(quote);
-		
-		button = new JButton("Einstein");
+		JButton button = new JButton("About");
 		button.setIcon(null);
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				JOptionPane.showMessageDialog(null, "www.swghosh.tk\nFollow @ github.com/swghosh");
-				quote.setText("Stay calm and keep coding!");
-				button.setText("SwG Ghosh");
 			}
 		});
 		button.setFont(new Font("Segoe UI Light", Font.PLAIN, 12));
 		button.setBounds(149, 220, 100, 30);
 		frame.getContentPane().add(button);
 		
+		JLabel lbl = new JLabel("\"Every fool can know. The point is to understand.\"");
+		lbl.setHorizontalAlignment(SwingConstants.CENTER);
+		lbl.setFont(new Font("Segoe UI Light", Font.PLAIN, 12));
+		lbl.setBounds(25, 179, 349, 30);
+		frame.getContentPane().add(lbl);
 	}
 }
 

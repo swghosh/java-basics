@@ -1,22 +1,21 @@
-package tk.swghosh.gui;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class ApplicationStart {
+public class FreshApplication {
 
 	private JFrame frame;
 	private JLabel quote;
 	private JButton button;
 	
-	ApplicationStart() {
+	FreshApplication() {
 		initialize();
 	}
 	
 	public static void main(String[] args) {
-		new ApplicationStart();
+		new FreshApplication();
 	}
 	
 	void initialize() {
