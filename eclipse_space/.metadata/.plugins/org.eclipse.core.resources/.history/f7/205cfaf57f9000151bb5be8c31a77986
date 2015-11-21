@@ -1,0 +1,27 @@
+package tk.swghosh.gui;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class ApplicationStart {
+
+	private JFrame frame;
+	
+	ApplicationStart() {
+		initialize();
+	}
+	
+	public static void main(String[] args) {
+		new ApplicationStart();
+	}
+	
+	private void initialize() {
+		frame.setBounds(100,100,300,300);
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container con = frame.getContentPane();
+	}
+	
+}
+
+	
