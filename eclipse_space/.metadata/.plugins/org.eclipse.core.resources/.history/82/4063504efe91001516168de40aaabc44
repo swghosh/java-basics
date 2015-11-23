@@ -1,0 +1,34 @@
+package tk.swghosh.gui;
+
+import javax.swing.*;
+
+public class Ramjee {
+
+	private JFrame frmRamjeeTester;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		new Ramjee();
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Ramjee() {
+		init();
+	}
+
+	/**
+	 * Initialize the application.
+	 */
+	private void init() {
+		frmRamjeeTester = new JFrame("Score Card | github.com/swghosh");
+		frmRamjeeTester.setTitle("Ramjee # Tester | SwG Ghosh");
+		frmRamjeeTester.setVisible(true);
+		frmRamjeeTester.setBounds(100, 100, 450, 300);
+		frmRamjeeTester.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmRamjeeTester.getContentPane().setLayout(null);
+	}
+}
