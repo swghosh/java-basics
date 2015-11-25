@@ -10,7 +10,6 @@ public class ApplicationStart {
 	private JFrame frame;
 	private JLabel quote;
 	private JButton button;
-	private JTextField textField;
 	
 	ApplicationStart() {
 		initialize();
@@ -45,6 +44,7 @@ public class ApplicationStart {
 		button.setFont(new Font("Segoe UI Light", Font.PLAIN, 12));
 		button.setBounds(149, 220, 100, 30);
 		frame.getContentPane().add(button);
+		
 	}
 }
 

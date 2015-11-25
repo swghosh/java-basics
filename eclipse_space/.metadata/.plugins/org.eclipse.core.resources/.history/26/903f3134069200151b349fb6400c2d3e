@@ -45,6 +45,14 @@ public class ApplicationStart {
 		button.setFont(new Font("Segoe UI Light", Font.PLAIN, 12));
 		button.setBounds(149, 220, 100, 30);
 		frame.getContentPane().add(button);
+		
+		textField = new JTextField();
+		textField.setText("#");
+		textField.setFont(new Font("Segoe UI Light", Font.PLAIN, 12));
+		textField.setBounds(25, 148, 317, 20);
+		frame.getContentPane().add(textField);
+		textField.setColumns(10);
+		
 	}
 }
 
