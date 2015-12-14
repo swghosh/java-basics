@@ -396,7 +396,7 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_1w_M0KKSEeWsPqVLY9DTSQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="NumberDecodingUtility.java" iconURI="platform:/plugin/org.eclipse.wb.core.ui/icons/gui_editor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wb.core.guiEditor&quot; name=&quot;NumberDecodingUtility.java&quot; partName=&quot;NumberDecodingUtility.java&quot; title=&quot;NumberDecodingUtility.java&quot; tooltip=&quot;Crafts/src/tk/swghosh/gui/NumberDecodingUtility.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Crafts/src/tk/swghosh/gui/NumberDecodingUtility.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;629&quot; selectionTopPixel=&quot;206&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wb.core.guiEditor&quot; name=&quot;NumberDecodingUtility.java&quot; partName=&quot;NumberDecodingUtility.java&quot; title=&quot;NumberDecodingUtility.java&quot; tooltip=&quot;Crafts/src/tk/swghosh/gui/NumberDecodingUtility.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Crafts/src/tk/swghosh/gui/NumberDecodingUtility.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1506&quot; selectionTopPixel=&quot;506&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.wb.core.guiEditor</tags>
           <tags>removeOnHide</tags>
@@ -679,7 +679,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Ftn5HZCCEeWGTu13HZNC4g" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_oebxp6KSEeWsPqVLY9DTSQ" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_FtqVFpCCEeWGTu13HZNC4g"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_uj7zc6KWEeWUO9NwtQqdlA" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_FtqVFpCCEeWGTu13HZNC4g"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Ftn5K5CCEeWGTu13HZNC4g" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -706,7 +706,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Ftn5ZpCCEeWGTu13HZNC4g" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_oeliqaKSEeWsPqVLY9DTSQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_Ftpu4JCCEeWGTu13HZNC4g"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_uj7zfaKWEeWUO9NwtQqdlA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_Ftpu4JCCEeWGTu13HZNC4g"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Ftn5cZCCEeWGTu13HZNC4g" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

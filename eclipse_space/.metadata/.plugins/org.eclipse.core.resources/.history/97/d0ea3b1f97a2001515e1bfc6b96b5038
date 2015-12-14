@@ -58,7 +58,7 @@ public class NumberDecodingUtility {
 			public void actionPerformed(ActionEvent arg0) {
 				String str = textArea.getText();
 				String out = new Long(decode(str)).toString();
-				JOptionPane.showMessageDialog(null, "Decode Successfull.\n" + out);
+				JOptionPane.showMessageDialog(null, "Decode Sucessfull.\n" + out);
 			}
 		});
 		btnNewButton.setFont(new Font("Segoe UI Light", Font.PLAIN, 14));
