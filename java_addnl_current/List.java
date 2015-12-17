@@ -76,7 +76,6 @@ class List {
 
     void unCommon1(List l) {
         int[] a =new int[this.size + l.size];
-        this.size = this.size + l.size;
         int k = 0;
         boolean flag = false;
         for(int i = 0; i < this.size; i++) {
@@ -84,7 +83,6 @@ class List {
             for(int j = 0; j < l.size; j++) {
                 if(this.arr[i] == l.arr[j]) {
                     flag = false;
-                    this.size--;
                     break;
                 }
             }
@@ -95,18 +93,17 @@ class List {
             for(int j = 0; j < this.size; j++) {
                 if(l.arr[i] == this.arr[j]) {
                     flag = false;
-                    this.size--;
                     break;
                 }
             }
             if(flag) a[k++] = l.arr[i];
         }
         this.arr = a;
+        this.size = k;
     }
 
     void unCommon1(List l1, List l2) {
         int[] a =new int[l1.size + l2.size];
-        this.size = l1.size + l2.size;
         int k = 0;
         boolean flag = false;
         for(int i = 0; i < l1.size; i++) {
@@ -114,7 +111,6 @@ class List {
             for(int j = 0; j < l2.size; j++) {
                 if(l1.arr[i] == l2.arr[j]) {
                     flag = false;
-                    this.size--;
                     break;
                 }
             }
@@ -125,13 +121,13 @@ class List {
             for(int j = 0; j < l1.size; j++) {
                 if(l2.arr[i] == l1.arr[j]) {
                     flag = false;
-                    this.size--;
                     break;
                 }
             }
             if(flag) a[k++] = l2.arr[i];
         }
         this.arr = a;
+        this.size = k;
     }
 
     void input() {
