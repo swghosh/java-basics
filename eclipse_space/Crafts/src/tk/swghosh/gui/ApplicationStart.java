@@ -10,7 +10,6 @@ public class ApplicationStart {
 	private JFrame frame;
 	private JLabel quote;
 	private JButton button;
-	private JTextField textField;
 	
 	ApplicationStart() {
 		initialize();

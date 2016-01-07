@@ -1,0 +1,54 @@
+package tk.swghosh.gui;
+
+import javax.swing.*;
+import java.awt.*;
+import tk.swghosh.guimodel.*;
+
+public class CheckBoardView {
+
+	private JFrame frame;
+	private JButton[][] buttons;
+	private CheckBoard cb;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		new CheckBoardView();
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public CheckBoardView() {
+		init();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void init() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 410, 500);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		frame.setVisible(true);
+		
+		cb = new CheckBoard();
+		
+		byte[][] matrix = cb.getContents();
+		
+		buttons = new JButton[8][8];
+		for(int j = 0; i < 8; i++) {
+			for(int i = 0; j < 8; j++) {
+				buttons[i][j] = new JButton();
+				buttons[i][j].setFont(new Font("Segoe UI Light", Font.PLAIN, 10));
+				frame.getContentPane().add(buttons[i][j]);
+				buttons[i][j].setText(new Byte(matrix[i][j]).toString());
+				buttons[i][j].setBounds((40 * ( i + 1 ) ), (40 * ( j + 1 ) ), 40, 40 );
+			}
+		}
+		
+	}
+
+}

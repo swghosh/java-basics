@@ -3,7 +3,6 @@ package tk.swghosh.gui;
 import javax.swing.*;
 import java.util.*;
 import java.awt.Font;
-import java.awt.Color;
 
 public class Clock {
 
