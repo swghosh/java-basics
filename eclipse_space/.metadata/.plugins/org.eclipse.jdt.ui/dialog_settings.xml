@@ -24,15 +24,17 @@
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="FatJarPackageWizard">
-		<item value="C:\Users\conta\Desktop\scorecard.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
-		<item value="ScoreCard - Crafts" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
+		<item value="C:\Users\SwG\Desktop\cHECKbOARD.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
+		<item value="CheckBoardView - Crafts" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
 		<item value="D:\Repositories\bytec\eclipse_space" key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION"/>
 		<item value="false" key="FatJarPackageWizardPage.ANTSCRIPT_SAVE"/>
-		<item value="2" key="FatJarPackageWizardPage.LIBRARY_HANDLING"/>
+		<item value="1" key="FatJarPackageWizardPage.LIBRARY_HANDLING"/>
 		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\SwG\Desktop\cHECKbOARD.jar"/>
 			<item value="C:\Users\conta\Desktop\scorecard.jar"/>
 		</list>
 		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
+			<item value="D:\Repositories\bytec\eclipse_space.xml"/>
 			<item value=".xml"/>
 		</list>
 	</section>
