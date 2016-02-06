@@ -18,7 +18,7 @@ public class Dequeue {
 			front=rear=0;
 		}
 		else {
-			front=front+1;
+			front=front-1;
 		}
 		dq[front]=ele;
 	}
@@ -68,9 +68,11 @@ public class Dequeue {
 	}
 	
 	void display() {
-		for(int i=front;i<=rear;i++) {
-			System.out.print(dq[i]+"|");
-		}
-	}
+        if(front==-1) return;
+        System.out.print("|");
+        for(int i=front;i<=rear;i++) {
+            System.out.print(dq[i]+"|");
+        }
+    }
 	
 }
