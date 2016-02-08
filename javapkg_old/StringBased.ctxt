@@ -1,6 +1,0 @@
-#BlueJ class context
-comment0.params=str\ pos
-comment0.target=java.lang.String\ wordAtPos(java.lang.String,\ int)
-comment1.params=str
-comment1.target=int\ countWords(java.lang.String)
-numComments=2
