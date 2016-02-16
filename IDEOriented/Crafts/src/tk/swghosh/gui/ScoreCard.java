@@ -35,37 +35,38 @@ public class ScoreCard {
 		frame.getContentPane().setLayout(null);
 
 		JLabel lblTitle = new JLabel("Blue Team Score");
-		lblTitle.setFont(new Font("Segoe UI Light", Font.PLAIN, 11));
+		lblTitle.setFont(new Font("Helvetica", Font.PLAIN, 11));
 		lblTitle.setBounds(55, 80, 79, 14);
 		frame.getContentPane().add(lblTitle);
 		
 		lblScore = new JLabel("0");
-		lblScore.setFont(new Font("Segoe UI Light", Font.PLAIN, 65));
+		lblScore.setForeground(Color.BLUE);
+		lblScore.setFont(new Font("Helvetica", Font.PLAIN, 65));
 		lblScore.setHorizontalAlignment(SwingConstants.CENTER);
 		lblScore.setBounds(281, 127, 143, 123);
 		frame.getContentPane().add(lblScore);
 		
-		JButton btnRed1 = new JButton("+");
-		btnRed1.addActionListener(new ActionListener() {
+		JButton btnIncrement = new JButton("+");
+		btnIncrement.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				int n = Integer.parseInt(lblScore.getText());
 				lblScore.setText(Integer.toString(n+1));
 			}
 		});
-		btnRed1.setFont(new Font("Segoe UI Light", Font.PLAIN, 9));
-		btnRed1.setBounds(55, 105, 40, 20);
-		frame.getContentPane().add(btnRed1);
+		btnIncrement.setFont(new Font("Helvetica", Font.PLAIN, 9));
+		btnIncrement.setBounds(55, 105, 40, 20);
+		frame.getContentPane().add(btnIncrement);
 		
-		JButton btnRed2 = new JButton("-");
-		btnRed2.addActionListener(new ActionListener() {
+		JButton btnDecrement = new JButton("-");
+		btnDecrement.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				int n = Integer.parseInt(lblScore.getText());
 				lblScore.setText(Integer.toString(n-1));
 			}
 		});
-		btnRed1.setFont(new Font("Segoe UI Light", Font.PLAIN, 9));
-		btnRed2.setBounds(105, 105, 40, 20);
-		frame.getContentPane().add(btnRed2);
+		btnIncrement.setFont(new Font("Helvetica", Font.PLAIN, 9));
+		btnDecrement.setBounds(105, 105, 40, 20);
+		frame.getContentPane().add(btnDecrement);
 		
 		JButton btnAbout = new JButton("About");
 		btnAbout.addActionListener(new ActionListener() {
@@ -73,7 +74,7 @@ public class ScoreCard {
 				JOptionPane.showMessageDialog(null, "www.swghosh.tk\nFollow @ github.com/swghosh");
 			}
 		});
-		btnAbout.setFont(new Font("Segoe UI Light", Font.PLAIN, 12));
+		btnAbout.setFont(new Font("Helvetica", Font.PLAIN, 12));
 		btnAbout.setBounds(324, 11, 100, 30);
 		frame.getContentPane().add(btnAbout);
 		

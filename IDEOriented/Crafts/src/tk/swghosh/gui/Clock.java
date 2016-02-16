@@ -39,7 +39,6 @@ public class Clock {
 		frame.getContentPane().add(time);
 		
 		JLabel head = new JLabel("System Time");
-		head.setFont(new Font("Segoe UI Light", Font.PLAIN, 25));
 		head.setBounds(10, 10, 300, 50);
 		frame.getContentPane().add(head);
 		
