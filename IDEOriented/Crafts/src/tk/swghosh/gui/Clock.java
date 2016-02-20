@@ -2,7 +2,6 @@ package tk.swghosh.gui;
 
 import javax.swing.*;
 import java.util.*;
-import java.awt.Font;
 
 public class Clock {
 
@@ -27,19 +26,18 @@ public class Clock {
 	 */
 	private void init() {
 		frame = new JFrame("Clock");
-		frame.setBounds(100, 100, 900, 275);
+		frame.setBounds(100, 100, 341, 173);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		frame.setVisible(true);
 		
-		JLabel time = new JLabel("Test");
-		time.setFont(new Font("Segoe UI Light", Font.PLAIN, 50));
+		JLabel time = new JLabel("Time");
 		time.setHorizontalAlignment(SwingConstants.CENTER);
-		time.setBounds(100, 70, 775, 150);
+		time.setBounds(10, 54, 312, 70);
 		frame.getContentPane().add(time);
 		
 		JLabel head = new JLabel("System Time");
-		head.setBounds(10, 10, 300, 50);
+		head.setBounds(10, 10, 312, 50);
 		frame.getContentPane().add(head);
 		
 		while(true) {
