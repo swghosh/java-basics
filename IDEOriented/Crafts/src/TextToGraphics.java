@@ -27,7 +27,7 @@ public class TextToGraphics {
             */
             BufferedImage img = new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB);
             Graphics2D g2d = img.createGraphics();
-            Font font = new Font("Architects Daughter", Font.PLAIN, 48);
+            Font font = new Font("Impact", Font.PLAIN, 48);
             g2d.setFont(font);
             FontMetrics fm = g2d.getFontMetrics();
             int width = fm.stringWidth(text);
