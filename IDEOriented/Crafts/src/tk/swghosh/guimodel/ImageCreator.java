@@ -49,12 +49,12 @@ public class ImageCreator {
         
         try {
         	String name = "Image";
-        	File i = new File(f, name + ".png");
+        	File i = new File(f, name + ".jpg");
         	while(i.isFile() || i.isDirectory()) {
         		name = name + "1";
-        		i = new File(f, name + ".png");
+        		i = new File(f, name + ".jpg");
         	}
-            ImageIO.write(img, "png", i);
+            ImageIO.write(img, "jpg", i);
         } 
         catch (IOException ex) { 
         	return false;
