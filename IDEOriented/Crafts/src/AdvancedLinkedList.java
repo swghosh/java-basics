@@ -4,7 +4,7 @@ public class AdvancedLinkedList extends LinkedList {
 	void merge (LinkedList a) {
 		Node ptr=a.start;
 		while (ptr!=null) {
-			this.insertRear(ptr.getInt());
+			this.insertRear(ptr.getData());
 			ptr=ptr.next;
 		}
 	}
@@ -17,11 +17,11 @@ public class AdvancedLinkedList extends LinkedList {
 			int count=1;
 			Node ptr=this.start;
 			for(;count<position;count++) {
-				l[0].insertFront(ptr.getInt());
+				l[0].insertFront(ptr.getData());
 				ptr=ptr.next;
 			}
 			while (ptr!=null) {
-				l[1].insertFront(ptr.getInt());
+				l[1].insertFront(ptr.getData());
 				ptr=ptr.next;
 			}
 		}

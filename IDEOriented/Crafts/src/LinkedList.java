@@ -13,7 +13,7 @@ public class LinkedList {
 	}
 	int deleteFront(){
 		try {
-			int val=start.getInt();
+			int val=start.getData();
 			start=start.next;
 			return val;
 		}
@@ -41,7 +41,7 @@ public class LinkedList {
 			int count=1;
 			Node ptr=start;
 			for(;count<position-1;count++) ptr=ptr.next;
-			int val=ptr.next.getInt();
+			int val=ptr.next.getData();
 			ptr.next=ptr.next.next;
 			return val;
 		}
@@ -66,7 +66,7 @@ public class LinkedList {
 				ptr2=ptr1;
 				ptr1=ptr1.next;
 			}
-			int val=ptr2.getInt();
+			int val=ptr2.getData();
 			ptr2.next=null;
 			return val;
 		}
@@ -78,7 +78,7 @@ public class LinkedList {
 	void display() {
 		Node ptr=start;
 		while(ptr!=null) {
-			System.out.print(ptr.getInt()+"-->");
+			System.out.print(ptr.getData()+"-->");
 			ptr=ptr.next;
 		}
 	}

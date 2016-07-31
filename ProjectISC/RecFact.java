@@ -42,7 +42,7 @@ public class RecFact
     void factseries() {
         double a = 0.0;
         a = factorial(n) / (factorial(r) * factorial(n - r));
-        System.out.println(n + "p" + r + " = " + a);
+        System.out.println(n + "c" + r + " = " + a);
     }
 
     /**
