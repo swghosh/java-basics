@@ -73,7 +73,7 @@ public class Frequency2
         Scanner sc = new Scanner(System.in);
         Frequency2 f = new Frequency2();
         System.out.print("Sentence [string] ->");
-        f.accept(sc.nextLine());//Takes user input string
+        f.accept(sc.nextLine().toLowerCase());//Takes user input string
         f.checkandfreq();//Checks frequency of word and
         f.len = 0;
         f.checkanfreq();//Checks frequency of word an
