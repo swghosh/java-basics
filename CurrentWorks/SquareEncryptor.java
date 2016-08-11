@@ -1,4 +1,4 @@
-class SquareEncrypt {
+class SquareEncryptor {
 
     static String encrypt(String str) {
         //Replace all instances of space with asteriks
@@ -26,5 +26,27 @@ class SquareEncrypt {
         return code;
     }
     
-    
+    static String decrypt(String code) {
+        //
+        String str = "";
+        //
+        char c[][] = new char[code.length() / 6][6];
+        //
+        for(int i = 0, k = 0; i < c[0].length; i++) {
+            for(int j = 0; j < c.length; j++) {
+                c[j][i] = code.charAt(k++);
+            }
+        }
+        //
+        for(int i = 0; i < c.length; i++) {
+            for(int j = 0; j < c[i].length; j++) {
+                str = str + c[i][j];
+            }
+        }
+        //
+        str = str.replaceAll("\\*", " ");
+        str = str.replaceAll("\\.", "");
+        //
+        return str;
+    }
 }
