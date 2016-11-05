@@ -3,6 +3,13 @@ import java.util.*;
 
 class Employees {
     
+    /**
+     * Method writeRecord
+     *
+     * @param empName Employee name
+     * @param empCode Employee code
+     * @param salary Employee salary
+     */
     static void writeRecord(String empName, int empCode, double salary) throws FileNotFoundException, IOException {
         File f = new File("employees.csv");
         FileWriter fw = new FileWriter(f, true);
@@ -12,6 +19,11 @@ class Employees {
         fw.close();
     }
 
+    /**
+     * Method readRecords
+     *
+     * @return List of employee records in the form of an array
+     */
     static String[] readRecords() throws FileNotFoundException, IOException {
         String records = "";
         File f = new File("employees.csv");
@@ -43,6 +55,11 @@ class Employees {
         return records.trim().split("\n");
     }
     
+    /**
+     * Method main
+     * method is executed at runtime
+     * @param args command line arguments
+     */
     public static void main(String args[]) {
         try {
             Scanner sc = new Scanner(System.in);
