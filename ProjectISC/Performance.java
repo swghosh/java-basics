@@ -35,7 +35,7 @@ public class Performance {
                 /* Read all Existing Records */
                 {
                     String[] records = readRecords();
-                    System.out.println("NAME\tSUB1\tSUB2\tSUB3\tNET\t%\tGRADE");
+                    System.out.println("NAME\tPHY\tCHEM\tBIO\tNET\t%\tGRADE");
                     /* Print the records with their grades */
                     for(int i = 0; i < records.length; i++) {
                         System.out.println(records[i]);

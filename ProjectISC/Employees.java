@@ -48,7 +48,7 @@ class Employees {
             }
             double total = gross + sa;
 
-            records = records + name + "\t" + String.valueOf(empCode) + "\t" + String.valueOf(basic) + "\t" + String.valueOf(da) + "\t" + String.valueOf(hra) + "\t" + String.valueOf(gross) + "\t" + String.valueOf(sa) + "\t" + String.valueOf(total) + "\n";
+            records = records + name + "\t" + String.valueOf(empCode) + "\t" + String.valueOf((int)basic) + "\t" + String.valueOf((int)da) + "\t" + String.valueOf((int)hra) + "\t" + String.valueOf((int)gross) + "\t" + String.valueOf((int)sa) + "\t" + String.valueOf((int)total) + "\n";
         }
         
         sc.close();
