@@ -32,7 +32,7 @@ public class Calculator {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frame = new JFrame("Calculator | by SwG Ghosh");
+		frame = new JFrame("Calculators");
 		frame.setBounds(100, 100, 440, 230);
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
