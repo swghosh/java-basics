@@ -1,3 +1,2 @@
-# jvmPad
-![alt text](http://instamize.me/assets/img/preloader.gif "Always being updated!")
-#### This repository focuses on Java programming in general.
+This repository contains few coding exercises using the Java language.
+It basically consists of simple programs that were created as a part of high school academics.
